@@ -1,0 +1,45 @@
+@mixin flex ($direction,$justify,$align,$gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap:$gap;
+}
+
+/*@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}*/
+@mixin reservar ($display,$text-d,$fs,$br,$justify,$align,$lspace,$fw){
+    display: $display;
+    text-decoration: $text-d;
+    font-size: $fs;
+    border-radius: $br;
+    justify-content: $justify;
+    align-items: $align;
+    letter-spacing: $lspace;
+    font-weight: $fw;
+}
+
+@mixin grid ($gTc,$gTr,$justify,$align,$gap) {
+    display: grid;
+    grid-template-columns: $gTc;
+    grid-template-rows: $gTr;
+    justify-content: $justify;
+    align-items: $align;
+    gap:$gap;
+}
+/*
+@mixin reservar{
+    display: grid;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.3rem;
+    font-family:'Homenaje', sans-serif;
+    font-weight: bold;
+}*/

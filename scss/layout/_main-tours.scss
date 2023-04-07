@@ -1,0 +1,67 @@
+main{
+    width: 100%;
+    .subtituloIndex2 {
+        width: 100%;
+        color: yellow;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family:'IM Fell French Canon SC', serif;
+        letter-spacing: 1.5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        }
+    .paseo {
+        color: #EC6011;
+        text-align: center;
+        padding: 10px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family:'Homenaje', sans-serif;
+        line-height: 15px;
+        margin-top: 20px;
+    }
+    .listaPaseo {
+        color: black;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Homenaje', sans-serif;
+        -webkit-text-stroke:0.075px #EC6011;
+        list-style: none;
+        line-height: 30px;
+    }
+    .grid-tour{
+        .tituloAzul {
+            color: blue;
+            text-align: center;
+            padding: 5px;
+            font-size: 35px;
+            font-weight: bold;
+            font-family: 'Homenaje', sans-serif;
+            margin-top: 20px;
+        }
+        .listaAzul{
+            color: black;
+            text-align: justify;
+            padding-left: 5px;
+            padding-right: 5px;
+            height: min-content;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Homenaje', sans-serif;
+            line-height: 20px;
+        }
+        .tituloRojo {
+            color: red;
+            text-align: center;
+            padding: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Homenaje', sans-serif;
+            margin-top: 15px;
+        }
+    }
+}

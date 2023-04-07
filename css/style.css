@@ -1,0 +1,859 @@
+/*@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}*/
+/*
+@mixin reservar{
+    display: grid;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.3rem;
+    font-family:'Homenaje', sans-serif;
+    font-weight: bold;
+}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main {
+  background-color: white; }
+
+.botones1 {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  column-gap: 1px; }
+  .botones1 .botones2 {
+    align-self: center;
+    justify-self: center; }
+    .botones1 .botones2 .reservar {
+      display: grid;
+      text-decoration: none;
+      font-size: 15px;
+      border-radius: 2rem;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 0.3rem;
+      font-weight: bold;
+      width: 200px;
+      height: 40px;
+      color: black;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: #06F51E;
+      font-family: 'Homenaje', sans-serif; }
+
+.reservar1 {
+  display: grid;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  width: 250px;
+  height: 50px;
+  color: WHITE;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: orange;
+  font-family: 'Homenaje', sans-serif; }
+
+.carruselbanner {
+  background-color: #620707;
+  width: 100%;
+  height: 280px;
+  padding-top: 30px; }
+
+.tour-boostrap {
+  display: none; }
+  .tour-boostrap .camioneta {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px; }
+
+header {
+  background-color: black;
+  font-family: 'IM Fell French Canon SC', serif;
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 5px; }
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style-type: none; }
+  .navbar li a {
+    text-decoration: none;
+    color: white; }
+    .navbar li a:hover {
+      color: red;
+      font-size: 25px; }
+  .navbar .navImg {
+    border-radius: 0.40rem;
+    height: 40px;
+    width: 130px; }
+  .navbar .compra {
+    display: none; }
+
+/*PAGE TOUR*/
+.navbar2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  list-style: none; }
+  .navbar2 li a {
+    text-decoration: none;
+    color: white; }
+    .navbar2 li a:hover {
+      color: red;
+      font-size: 25px; }
+  .navbar2 .navImg {
+    border-radius: 0.40rem;
+    height: 40px;
+    width: 130px; }
+  .navbar2 .compra {
+    display: none; }
+
+main {
+  background-color: white;
+  width: 100%; }
+  main .tituloIndex {
+    background-color: #620707;
+    width: 100%; }
+  main .subtituloIndex {
+    width: 100%;
+    color: yellow;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'IM Fell French Canon SC', serif;
+    letter-spacing: 1.5px; }
+  main .parrafoIndex {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: min-content;
+    font-family: 'IM Fell English', serif;
+    justify-content: space-between;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 20px;
+    word-spacing: 1px; }
+
+.imagenesIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  width: 100%;
+  row-gap: 4px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'IM Fell French Canon SC', serif;
+  padding-top: 8px;
+  justify-self: center;
+  justify-items: center; }
+  .imagenesIndex .card1 {
+    width: 305px;
+    height: 240px;
+    padding-top: 18px; }
+    .imagenesIndex .card1:hover {
+      color: #910505;
+      background-color: rgba(128, 128, 0, 0.549);
+      font-weight: 600;
+      border-radius: 20px; }
+
+.PieGris {
+  display: grid;
+  width: 100%;
+  height: min-content;
+  background-color: #D9D9D9;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+  justify-items: center;
+  margin-top: 5px; }
+
+.piegris1 .tituloPie {
+  font-family: 'IM Fell DW Pica SC', serif;
+  color: #620707;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 3px;
+  width: 100%;
+  text-align: center; }
+
+.piegris1 .finPage {
+  font-size: 15px;
+  font-family: 'IM Fell DW Pica SC', serif;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 5px; }
+
+.piegris1 .iconos {
+  height: 30px;
+  width: 25px;
+  vertical-align: middle;
+  padding-right: 5px; }
+
+.Facebook {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  color: black;
+  font-weight: bold;
+  padding-right: 5px; }
+
+.logoPie {
+  border-radius: 20px;
+  height: 180px;
+  width: 180px;
+  align-items: center;
+  justify-items: center; }
+
+.pierojo, .pierojo2 {
+  background-color: #620707;
+  width: 100%;
+  height: min-content;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+  font-family: 'Homenaje', sans-serif;
+  letter-spacing: 3px;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px; }
+
+/*PIE TOUR*/
+.pierojo2 {
+  background-color: #620707;
+  width: 100%;
+  height: 17px; }
+
+main .ImagenTextoAgencia {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  main .ImagenTextoAgencia .Parrafo-Agencia {
+    display: flex;
+    width: 100%;
+    height: min-content;
+    color: black;
+    text-align: center;
+    font-family: 'IM Fell English', serif;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 20px;
+    word-spacing: 2px;
+    justify-self: center;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    main .ImagenTextoAgencia .Parrafo-Agencia .parrafoNosotros {
+      text-align: center; }
+  main .ImagenTextoAgencia .imagenAgencia {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    height: 200px;
+    width: 300px;
+    justify-content: center;
+    align-content: center;
+    padding-left: 17px; }
+
+main .nosotrosSubtitulo {
+  color: #910505;
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'IM Fell English', serif;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.25rem;
+  padding-top: 10px; }
+
+main .DosColumnas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 8px;
+  gap: 10px; }
+  main .DosColumnas .DosColumnas1, main .DosColumnas .DosColumnas2 {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    font-family: 'Homenaje', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 10px;
+    word-spacing: 5px;
+    letter-spacing: 2px; }
+  main .DosColumnas .parrafoMiVi1, main .DosColumnas .parrafoMiVi2 {
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+    height: min-content;
+    font-family: 'Homenaje', sans-serif;
+    justify-content: center;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 15px;
+    word-spacing: 10px; }
+
+main {
+  width: 100%; }
+  main .subtituloIndex2 {
+    width: 100%;
+    color: yellow;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'IM Fell French Canon SC', serif;
+    letter-spacing: 1.5px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  main .paseo {
+    color: #EC6011;
+    text-align: center;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Homenaje', sans-serif;
+    line-height: 15px;
+    margin-top: 20px; }
+  main .listaPaseo {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Homenaje', sans-serif;
+    -webkit-text-stroke: 0.075px #EC6011;
+    list-style: none;
+    line-height: 30px; }
+  main .grid-tour .tituloAzul {
+    color: blue;
+    text-align: center;
+    padding: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Homenaje', sans-serif;
+    margin-top: 20px; }
+  main .grid-tour .listaAzul {
+    color: black;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: min-content;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Homenaje', sans-serif;
+    line-height: 20px; }
+  main .grid-tour .tituloRojo {
+    color: red;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Homenaje', sans-serif;
+    margin-top: 15px; }
+
+main .Bolivia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 180px;
+  background-color: #620707; }
+  main .Bolivia .uyuni {
+    width: 250px;
+    height: 150px;
+    border-radius: 2rem; }
+
+main .tituloUyuni {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'IM Fell English', serif; }
+
+main .uyuniG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  padding: 5px; }
+  main .uyuniG .listaAzulU, main .uyuniG .listaRojaU {
+    color: black;
+    text-align: justify;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Homenaje', sans-serif;
+    margin-bottom: 5px; }
+    main .uyuniG .listaAzulU .tituloAzulU, main .uyuniG .listaRojaU .tituloAzulU {
+      color: blue;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: 'Homenaje', sans-serif;
+      margin-bottom: 10px;
+      padding-top: 10px; }
+  main .uyuniG .listaRojaU {
+    font-size: 15px; }
+    main .uyuniG .listaRojaU .tituloRojoU {
+      color: red;
+      text-align: center;
+      padding: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Homenaje', sans-serif; }
+
+main .subtituloUyuni {
+  color: orange;
+  text-align: center;
+  padding: 5px;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: 'Holtwood One SC', serif;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 0.75rem 0.25rem 1.5rem orange; }
+
+.contactoG {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contactoG .contactoG1 .info {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'IM Fell DW Pica SC', serif;
+    -webkit-text-stroke: 0.01 black; }
+  .contactoG .contactoG1 .listaInfo {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'IM Fell DW Pica SC', serif;
+    list-style-type: none; }
+  .contactoG .contactoG1 .iconos2 {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    padding-right: 10px; }
+  .contactoG .contactoG2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; }
+    .contactoG .contactoG2 .mapa {
+      border-radius: 20px;
+      width: 300px;
+      height: 200px; }
+
+.formulario {
+  color: black;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'IM Fell DW Pica SC', serif;
+  -webkit-text-stroke: 1px black; }
+
+.form {
+  width: 300px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px; }
+  .form .input, .form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 10px;
+    border: none; }
+  .form .textarea {
+    min-height: 80px;
+    max-height: 500px;
+    max-width: 100%;
+    min-width: 100%; }
+  .form .botonEnviar {
+    background: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin-left: 70%; }
+
+@media (min-width: 768px) {
+  .header {
+    font-size: 10px; }
+  .navbar {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    letter-spacing: 3px; }
+    .navbar .navImg {
+      border-radius: 0.40rem;
+      height: 33px;
+      width: 110px; }
+    .navbar .compra {
+      display: flex; }
+  .imagenesIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    row-gap: 4px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'IM Fell French Canon SC', serif;
+    padding-top: 8px;
+    justify-self: center;
+    justify-items: center; }
+  .reservar {
+    width: 230px;
+    height: 40px;
+    font-size: 18px; }
+  .piegris1 .tituloPie {
+    font-size: 25px; }
+  .piegris1 .finPage {
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 10px; }
+  .piegris1 .iconos {
+    height: 40px;
+    width: 35px; }
+  .piegris1 .Facebook {
+    width: 40px;
+    height: 40px;
+    padding-right: 7px; }
+  main {
+    /*Pagina Nosotros*/ }
+    main .ImagenTextoAgencia {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      justify-content: center;
+      margin-top: 10px; }
+    main .imagenAgencia {
+      align-self: center;
+      justify-self: center;
+      margin-top: 15px; }
+    main .reservar1 {
+      width: 230px;
+      height: 40px;
+      font-size: 18px; }
+  /*PAGINA TOURS BOOSTRAP*/
+  main .tour-boostrap {
+    display: flex; }
+  main .tour-boostrap2 {
+    display: none; }
+  .navbar2 {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    letter-spacing: 3px; }
+    .navbar2 .compra {
+      display: flex; }
+  /*PAGINA CONTACTO*/
+  .contactoG {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
+
+@media (min-width: 1440px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 5px;
+    font-size: 25px; }
+    .navbar .navImg {
+      height: 40px;
+      width: 130px;
+      margin-top: 4px; }
+  main .imagenesIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: none;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    row-gap: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'IM Fell French Canon SC', serif;
+    padding-top: 8px;
+    justify-self: center;
+    justify-items: center; }
+  main .botones1 {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    column-gap: 200px; }
+    main .botones1 .botones2 {
+      justify-self: right; }
+      main .botones1 .botones2 .reservar {
+        display: grid;
+        width: 280px;
+        height: 50px;
+        font-size: 23px; }
+    main .botones1 .botones3 {
+      justify-self: left; }
+  main .tituloIndex .subtituloIndex {
+    padding: 15px;
+    font-size: 35px;
+    letter-spacing: 5px; }
+  main .tituloIndex .parrafoIndex {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+    word-spacing: 3px;
+    letter-spacing: 3px; }
+  footer .PieGris {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80% 20%;
+    margin-top: 10px;
+    padding-top: 25px;
+    justify-items: center; }
+    footer .PieGris .piegris1 .tituloPie {
+      font-size: 30px; }
+    footer .PieGris .piegris1 .iconos {
+      height: 40px;
+      width: 35px; }
+    footer .PieGris .piegris1 .finPage {
+      font-size: 20px;
+      letter-spacing: 2px;
+      line-height: 15px; }
+    footer .PieGris .piegris1 .Facebook {
+      width: 40px;
+      height: 40px;
+      padding-right: 7px; }
+    footer .PieGris .pierojo, footer .PieGris .pierojo2 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      height: 25px;
+      letter-spacing: 5px;
+      font-size: 12px;
+      padding-top: 5px; }
+  /*Pagina Nosotros*/
+  main .ImagenTextoAgencia {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: center;
+    margin-top: 10px; }
+    main .ImagenTextoAgencia .Parrafo-Agencia {
+      font-size: 23px;
+      line-height: 30px;
+      word-spacing: 2px;
+      justify-self: center;
+      align-self: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 30px; }
+      main .ImagenTextoAgencia .Parrafo-Agencia .imagenAgencia {
+        align-self: center;
+        justify-self: center;
+        margin-top: 25px;
+        width: 360px;
+        height: 200px;
+        margin-left: 15px; }
+  main .nosotrosSubtitulo {
+    font-size: 25px;
+    padding: 25px; }
+  main .DosColumnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    main .DosColumnas .DosColumnas1, main .DosColumnas .DosColumnas2 {
+      font-size: 30px;
+      line-height: 10px;
+      word-spacing: 5px;
+      letter-spacing: 2px;
+      padding-top: 30px; }
+      main .DosColumnas .DosColumnas1 .parrafoMiVi1, main .DosColumnas .DosColumnas2 .parrafoMiVi1, main .DosColumnas .DosColumnas1 .parrafoMiVi2, main .DosColumnas .DosColumnas2 .parrafoMiVi2 {
+        padding-top: 20px;
+        font-size: 25px;
+        line-height: 20px;
+        word-spacing: 15px; }
+  main .botones1 .botones3 {
+    width: 60px;
+    height: 60px; }
+  main .botones1 .botones2 .reservar1 {
+    display: grid;
+    width: 280px;
+    height: 50px;
+    font-size: 23px; }
+  /*PAGINA BOOSTRAP*/
+  footer .pierojo2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: min-content;
+    letter-spacing: 5px;
+    font-size: 12px;
+    padding-top: 5px; }
+  main .camioneta {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 20px; }
+  main .grid-tour {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px; }
+    main .grid-tour .col .listaAzul {
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 30px;
+      line-height: 30px;
+      text-align: justify; }
+    main .grid-tour .col .tituloRojo {
+      font-size: 40px;
+      margin-top: 25px; }
+    main .grid-tour .col .tituloAzul {
+      font-size: 45px;
+      margin-top: 30px; }
+  main .listaPaseo {
+    font-size: 40px;
+    line-height: 40px; }
+  main .paseo {
+    font-size: 45px;
+    line-height: 20px;
+    margin-top: 30px; }
+  main .subtituloIndex2 {
+    padding: 15px;
+    font-size: 35px;
+    letter-spacing: 5px; }
+  main .navbar2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 5px;
+    font-size: 25px; }
+  /*PAGINA UYUNI*/
+  main .tituloUyuni {
+    font-size: 35px; }
+  main .uyuniG {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px; }
+    main .uyuniG .listaAzulU, main .uyuniG .listaRojaU {
+      font-size: 20px; }
+      main .uyuniG .listaAzulU .tituloAzulU, main .uyuniG .listaRojaU .tituloAzulU {
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 20px;
+        padding-top: 20px; }
+    main .uyuniG .listaRojaU {
+      text-align: right;
+      padding: 10px;
+      font-size: 20px; }
+      main .uyuniG .listaRojaU .tituloRojoU {
+        text-align: right;
+        font-size: 30px;
+        margin-bottom: 20px;
+        padding-bottom: 20px; }
+  main .subtituloUyuni {
+    text-align: center;
+    padding: 60px;
+    font-size: 35px; }
+  /*PAGINA CONTACTO*/
+  main .contactoG .contactoG1 .info {
+    font-size: 35px; }
+  main .contactoG .contactoG1 .listaInfo {
+    font-size: 25px; }
+  main .contactoG .contactoG1 .iconos2 {
+    width: 50px;
+    height: 50px; }
+  main .contactoG .contactoG2 .mapa {
+    border-radius: 20px;
+    width: 500px;
+    height: 250px; }
+  main .formulario {
+    font-size: 40px; }
+  main .form {
+    width: 1000px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4rem 4rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    margin-bottom: 4rem; }
+    main .form .input, main .form textarea {
+      width: 100%;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      font-size: 1rem;
+      border: none; }
+    main .form .textarea {
+      min-height: 10rem;
+      max-height: 20rem;
+      max-width: 100%;
+      min-width: 100%; }
+    main .form .botonEnviar {
+      background: black;
+      color: white;
+      font-size: 20px;
+      border-radius: 5px;
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      margin-left: 85%; } }

@@ -1,0 +1,50 @@
+header{
+    background-color: $background-principal;
+    font-family:'IM Fell French Canon SC', serif;
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.navbar{
+    @include flex (column,center,center,10px);
+    list-style-type:none;
+    li a{
+        text-decoration: none;
+        color:white;
+        &:hover{
+            color: red;
+            font-size: 25px;
+        }
+    }
+    .navImg {
+        border-radius: 0.40rem;
+        height: 40px;
+        width: 130px;
+        }
+    .compra{
+        display: none;
+    }
+}
+/*PAGE TOUR*/
+.navbar2{
+    @include flex (column,center,center,10px);
+    margin-bottom: 0px;
+    margin-right: 10px;
+    list-style: none;
+    li a{
+        text-decoration: none;
+        color:white;
+        &:hover{
+            color: red;
+            font-size: 25px;
+        }
+    }
+    .navImg {
+        border-radius: 0.40rem;
+        height: 40px;
+        width: 130px;
+        }
+    .compra{
+        display: none;
+    }
+}

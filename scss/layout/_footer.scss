@@ -1,0 +1,73 @@
+.PieGris{
+    display: grid;
+    width: 100%;
+    height: min-content;
+    background-color: $background-pie;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    justify-items: center;
+    margin-top: 5px;
+}
+.piegris1{
+    .tituloPie{
+        font-family: 'IM Fell DW Pica SC', serif;
+        color: #620707;
+        font-weight: bold;
+        font-size: 25px;
+        letter-spacing: 3px;
+        width: 100%;
+        text-align: center;
+    }
+    .finPage {
+        font-size: 15px;
+        font-family: 'IM Fell DW Pica SC', serif;
+        color: black;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 5px;
+    }
+    .iconos{
+        height: 30px;
+        width: 25px;
+        vertical-align: middle;
+        padding-right: 5px;
+    }
+}
+.Facebook{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    color: black;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.logoPie {
+    border-radius: 20px;
+    height: 180px;
+    width: 180px;
+    align-items: center;
+    justify-items: center;
+}
+.pierojo {
+    background-color: $background-secundario;
+    width: 100%;
+    height: min-content ;
+    font-weight:lighter;
+    text-align: center;
+    color: white;
+    font-family:'Homenaje', sans-serif;
+    letter-spacing: 3px;
+    align-items:center;
+    justify-content: center;
+    font-size: 9px;
+}
+/*PIE TOUR*/
+.pierojo2 {
+    background-color: $background-secundario;
+    width: 100%;
+    height: 17px;
+    @extend .pierojo;
+}

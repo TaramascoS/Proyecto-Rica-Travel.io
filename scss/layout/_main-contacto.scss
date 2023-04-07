@@ -1,0 +1,84 @@
+.contactoG{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contactoG1{
+        .info {
+            color: white;
+            text-align:center;
+            padding: 5px;
+            font-size: 20px;
+            font-weight:normal;
+            font-family: 'IM Fell DW Pica SC', serif;
+            -webkit-text-stroke: 0.01 black;
+        }
+        .listaInfo {
+            color: white;
+            text-align:center;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: 'IM Fell DW Pica SC', serif;
+            list-style-type: none;
+        }
+        .iconos2 {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+    }
+    .contactoG2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        .mapa {
+            border-radius: 20px;
+            width: 300px;
+            height: 200px;
+        }
+    }
+}
+.formulario {   
+    color: black;
+    text-align:center;
+    padding-top: 15px;
+    font-size: 30px;
+    font-weight:bold;
+    font-family:'IM Fell DW Pica SC', serif;
+    -webkit-text-stroke:1px black;
+    }
+.form {
+    width: 300px;
+    margin: auto;
+    background: rgba(0,0,0,0.3);
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    .input, textarea {
+        width:100%;
+        margin-bottom:20px;
+        padding: 10px;
+        font-size: 10px;
+        border:none;
+    }
+    .textarea {
+        min-height: 80px;
+        max-height: 500px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .botonEnviar {
+    background: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin-left: 70%;
+    }
+}

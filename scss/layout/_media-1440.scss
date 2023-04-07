@@ -1,0 +1,317 @@
+@media (min-width:1440px){
+    .navbar{
+        @include flex (row,space-around,center,10px);
+        letter-spacing: 5px;
+        font-size: 25px;
+        .navImg{
+            height: 40px;
+            width: 130px;
+            margin-top: 4px;
+        }
+    }
+    main{
+        .imagenesIndex {
+            @include grid (1fr 1fr 1fr, none,center,center,none);
+            row-gap: 10px;
+            text-align: center;
+            font-size: 15px;
+            font-family:'IM Fell French Canon SC', serif;
+            padding-top: 8px;
+            justify-self: center;
+            justify-items: center;
+        }
+        .botones1 {
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            column-gap: 200px;
+                .botones2{
+                    justify-self:right;
+                    .reservar{
+                        display: grid;
+                        width: 280px;
+                        height: 50px;
+                        font-size: 23px;
+                    }
+                }
+                .botones3{
+                    justify-self: left;
+                }
+        }
+        .tituloIndex{
+            .subtituloIndex {
+                padding: 15px;
+                font-size: 35px;
+                letter-spacing: 5px;
+                }
+            .parrafoIndex {
+                font-size: 20px;
+                font-style:normal;
+                line-height: 30px;
+                word-spacing: 3px;
+                letter-spacing: 3px;
+            }
+        }
+    }
+    footer{
+        .PieGris {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 80% 20%;
+            margin-top: 10px;
+            padding-top: 25px;
+            justify-items: center;
+                .piegris1{
+                    .tituloPie{
+                        font-size: 30px;
+                    }
+                    .iconos {
+                        height: 40px;
+                        width: 35px;
+                    }
+                    .finPage {
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                        line-height: 15px;
+                    }
+                    .Facebook{
+                        width: 40px;
+                        height: 40px;
+                        padding-right: 7px;
+                    }
+                }
+            .pierojo {
+                grid-column-start: 1 ;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 2;
+                height: 25px;
+                letter-spacing: 5px;
+                font-size: 12px;
+                padding-top: 5px;
+            }
+        }
+    }
+    /*Pagina Nosotros*/
+    main{
+        .ImagenTextoAgencia{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            justify-content: center;
+            margin-top: 10px;
+                .Parrafo-Agencia {
+                    font-size: 23px;
+                    line-height: 30px;
+                    word-spacing: 2px;
+                    justify-self: center;
+                    align-self: center;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                        .imagenAgencia{
+                            align-self: center;
+                            justify-self: center;
+                            margin-top: 25px;
+                            width: 360px;
+                            height: 200px;
+                            margin-left: 15px;
+                        }
+                }   
+        }
+        .nosotrosSubtitulo {
+        font-size: 25px;
+        padding: 25px;
+        }
+        .DosColumnas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+            .DosColumnas1{
+                font-size: 30px;
+                line-height: 10px;
+                word-spacing: 5px;
+                letter-spacing: 2px;
+                padding-top: 30px;
+                    .parrafoMiVi1 {
+                        padding-top: 20px;
+                        font-size: 25px;
+                        line-height: 20px;
+                        word-spacing: 15px;
+                    }
+            }
+        }
+        .botones1{
+            .botones3{
+                width: 60px;
+                height: 60px;
+            }
+            .botones2{
+                .reservar1{
+                display: grid;
+                width: 280px;
+                height: 50px;
+                font-size: 23px;
+                }
+            }
+        }
+    }
+    /*PAGINA BOOSTRAP*/
+    footer {
+        .pierojo2 {
+            grid-column-start: 1 ;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            height:min-content;
+            letter-spacing: 5px;
+            font-size: 12px;
+            padding-top: 5px;
+        }
+    }
+    main{
+        .camioneta{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        .grid-tour{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 50px;
+                .col{
+                    .listaAzul{
+                        text-align: center;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 30px;
+                        line-height: 30px;
+                        text-align: justify;
+                    }
+                    .tituloRojo {
+                        font-size: 40px;
+                        margin-top: 25px;
+                    }
+                    .tituloAzul {
+                        font-size: 45px;
+                        margin-top: 30px;
+                    }
+                }
+        }
+        .listaPaseo {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        .paseo {
+            font-size: 45px;
+            line-height: 20px;
+            margin-top: 30px;
+        }
+        .subtituloIndex2 {
+            padding: 15px;
+            font-size: 35px;
+            letter-spacing: 5px;
+        }
+        .navbar2{
+            @include flex (row,space-around,center,10px);
+            letter-spacing: 5px;
+            font-size: 25px;
+        }
+    }
+    /*PAGINA UYUNI*/
+    main{
+        .tituloUyuni {
+            font-size: 35px;
+        }
+        .uyuniG{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 20px;
+                .listaAzulU{
+                    font-size: 20px;
+                    .tituloAzulU {
+                        text-align: left;
+                        font-size: 30px;
+                        margin-bottom: 20px;
+                        padding-top: 20px;
+                    }
+                }
+                .listaRojaU{
+                    text-align: right;
+                    padding: 10px;
+                    font-size: 20px;
+                    .tituloRojoU {
+                        text-align: right;
+                        font-size: 30px;
+                        margin-bottom: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+        }
+        .subtituloUyuni {
+            text-align:center;
+            padding: 60px;
+            font-size: 35px;
+        }
+    }
+    /*PAGINA CONTACTO*/
+    main{
+        .contactoG{
+            .contactoG1{
+                .info {
+                    font-size: 35px;
+                }
+                .listaInfo {
+                    font-size: 25px;
+                }
+                .iconos2 {
+                width: 50px;
+                height: 50px;
+                }
+            }
+            .contactoG2{
+                .mapa {
+                    border-radius: 20px;
+                    width: 500px;
+                    height: 250px;
+                }
+            }
+        }
+        .formulario {   
+            font-size: 40px;
+        }
+        .form {
+            width: 1000px;
+            margin: auto;
+            background: rgba(0,0,0,0.3);
+            padding: 4rem 4rem;
+            border-radius: 2rem;
+            margin-top: 2rem;
+            box-sizing: border-box;
+            margin-bottom: 4rem;
+                .input, textarea {
+                    width:100%;
+                    margin-bottom:2rem;
+                    padding: 1rem;
+                    font-size: 1rem;
+                    border:none;
+                }
+                .textarea {
+                    min-height: 10rem;
+                    max-height: 20rem;
+                    max-width: 100%;
+                    min-width: 100%;
+                }
+                .botonEnviar {
+                    background: black;
+                    color: white;
+                    font-size: 20px;
+                    border-radius: 5px;
+                    display: inline-block;
+                    width: 100px;
+                    height: 50px;
+                    margin-left: 85%;
+                }
+        }
+    }
+}

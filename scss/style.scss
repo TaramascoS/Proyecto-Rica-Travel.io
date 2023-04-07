@@ -1,0 +1,15 @@
+@import "utilities/variable";
+@import "utilities/mixins";
+@import "base/reset";
+@import "components/botones";
+@import "components/bootstrap";
+@import "layout/header";
+@import "layout/main-index";
+@import "layout/footer";
+@import "layout/main-nosotros";
+@import "layout/main-tours";
+@import "layout/main-uyuni";
+@import "layout/main-contacto";
+
+@import "./layout/media-768";
+@import "./layout/media-1440";

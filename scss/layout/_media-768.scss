@@ -1,0 +1,95 @@
+@media (min-width:768px){
+    .header {  
+    font-size: 10px;
+    }
+    .navbar{
+        flex-direction: row;
+        justify-content:space-around;
+        gap: 10px;
+        letter-spacing: 3px;
+        .navImg{
+            border-radius: 0.40rem;
+            height: 33px;
+            width: 110px;
+        }
+        .compra{
+            display:flex;
+        }
+    }
+    .imagenesIndex {
+        @include grid (1fr 1fr,none,center,center,none);
+        row-gap: 4px;
+        text-align: center;
+        font-size: 12px;
+        font-family:'IM Fell French Canon SC', serif;
+        padding-top: 8px;
+        justify-self: center;
+        justify-items: center;
+    }
+    .reservar{
+        width: 230px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .piegris1 {
+        .tituloPie{
+            font-size: 25px;
+        }
+        .finPage {
+            font-size: 17px;
+            letter-spacing: 2px;
+            line-height: 10px;
+        }
+        .iconos {
+            height: 40px;
+            width: 35px;
+        }
+        .Facebook{
+            width: 40px;
+            height: 40px;
+            padding-right: 7px;
+        }
+    }
+    main{
+    /*Pagina Nosotros*/
+    .ImagenTextoAgencia{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .imagenAgencia{
+        align-self: center;
+        justify-self: center;
+        margin-top: 15px;
+    }
+    .reservar1{
+        width: 230px;
+        height: 40px;
+        font-size: 18px;
+    }
+    }
+    /*PAGINA TOURS BOOSTRAP*/
+    main{
+    .tour-boostrap {
+        display: flex;
+    }
+    .tour-boostrap2 {
+        display: none;
+    }
+    }
+    .navbar2{
+        flex-direction: row;
+        justify-content:space-around;
+        gap: 10px;
+        letter-spacing: 3px;
+        .compra{
+            display: flex;
+        }
+    }
+    /*PAGINA CONTACTO*/
+    .contactoG{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
