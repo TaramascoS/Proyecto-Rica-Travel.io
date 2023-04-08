@@ -52,6 +52,14 @@ main {
       padding-right: 10px;
       background-color: #06F51E;
       font-family: 'Homenaje', sans-serif; }
+      .botones1 .botones2 .reservar:hover {
+        transform: scale(1.1);
+        border-style: solid;
+        border-color: goldenrod;
+        background-color: red;
+        color: yellow; }
+  .botones1 .botones3:hover {
+    transform: scale(1.5); }
 
 .reservar1 {
   display: grid;
@@ -71,6 +79,12 @@ main {
   padding-right: 5px;
   background-color: orange;
   font-family: 'Homenaje', sans-serif; }
+  .reservar1:hover {
+    transform: scale(1.1);
+    border-style: solid;
+    border-color: greenyellow;
+    background-color: rgba(8, 213, 176, 0.722);
+    color: blueviolet; }
 
 .carruselbanner {
   background-color: #620707;
@@ -177,18 +191,20 @@ main {
   text-align: center;
   font-size: 12px;
   font-family: 'IM Fell French Canon SC', serif;
-  padding-top: 8px;
+  padding-top: 10px;
   justify-self: center;
-  justify-items: center; }
+  justify-items: center;
+  margin-top: 15px; }
   .imagenesIndex .card1 {
     width: 305px;
     height: 240px;
-    padding-top: 18px; }
+    padding-top: 20px; }
     .imagenesIndex .card1:hover {
       color: #910505;
       background-color: rgba(128, 128, 0, 0.549);
-      font-weight: 600;
-      border-radius: 20px; }
+      font-weight: 500;
+      border-radius: 20px;
+      transform: scale(1.1); }
 
 .PieGris {
   display: grid;
@@ -456,6 +472,9 @@ main .subtituloUyuni {
   font-family: 'Holtwood One SC', serif;
   -webkit-text-stroke: 1px black;
   text-shadow: 0.75rem 0.25rem 1.5rem orange; }
+  main .subtituloUyuni:hover {
+    text-shadow: 0.75rem 0.25rem 1.5rem blueviolet;
+    color: #07c7ca; }
 
 .contactoG {
   display: flex;

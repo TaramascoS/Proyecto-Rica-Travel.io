@@ -70,5 +70,9 @@ main{
         font-family:'Holtwood One SC', serif;;
         -webkit-text-stroke:1px black;
         text-shadow: 0.75rem 0.25rem 1.5rem orange;
+        &:hover{
+            text-shadow: 0.75rem 0.25rem 1.5rem blueviolet;
+            color: rgb(7, 199, 202);
+        }
     }
 }
