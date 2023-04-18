@@ -1,31 +1,46 @@
-header{
-    background-color: $background-principal;
-    font-family:'IM Fell French Canon SC', serif;
+.nav-wraper{
     width: 100%;
-    font-size: 20px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background-principal;
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 5px 5px 7px grey;
+}
+.navImg{
+    border-radius: 0.40rem;
+    height: 40px;
+    width: 130px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.menu ul li a{
     letter-spacing: 5px;
-}
-.navbar{
-    @include flex (column,center,center,10px);
-    list-style-type:none;
-    li a{
-        text-decoration: none;
-        color:white;
-        &:hover{
-            color: red;
-            font-size: 25px;
-        }
-    }
-    .navImg {
-        border-radius: 0.40rem;
-        height: 40px;
-        width: 130px;
-        }
-    .compra{
-        display: none;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-family:'IM Fell French Canon SC', serif;
+    &:hover{
+        color: red;
+        font-size: 25px;
     }
 }
+nav #toggle,nav label{
+    display: none;
+}
+
+
 /*PAGE TOUR*/
+/*
 .navbar2{
     @include flex (column,center,center,10px);
     margin-bottom: 0px;
@@ -47,4 +62,4 @@ header{
     .compra{
         display: none;
     }
-}
+}*/
